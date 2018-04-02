@@ -6,6 +6,10 @@
 build/
 DerivedData/
 
+.DS_Store
+*.swp #これも指定しておくと便利
+
+UserInterfaceState.xcuserstate # ここで指定
 ## Various settings
 *.pbxuser
 !default.pbxuser
