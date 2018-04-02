@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5551524020724540002708F3 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5551523F20724540002708F3 /* CalculatorViewController.swift */; };
+		555152422072455C002708F3 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555152412072455C002708F3 /* SettingViewController.swift */; };
+		5551524420724578002708F3 /* SchedulerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5551524320724578002708F3 /* SchedulerViewController.swift */; };
 		55A145D5206CC59900B141E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A145D4206CC59900B141E4 /* AppDelegate.swift */; };
 		55A145D7206CC59900B141E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A145D6206CC59900B141E4 /* ViewController.swift */; };
 		55A145DA206CC59900B141E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55A145D8206CC59900B141E4 /* Main.storyboard */; };
@@ -37,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5551523F20724540002708F3 /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
+		555152412072455C002708F3 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		5551524320724578002708F3 /* SchedulerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulerViewController.swift; sourceTree = "<group>"; };
 		55A145D1206CC59900B141E4 /* AKScheduler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AKScheduler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55A145D4206CC59900B141E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55A145D6206CC59900B141E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -138,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				55A14604206CC99800B141E4 /* Scheduler.storyboard */,
+				5551524320724578002708F3 /* SchedulerViewController.swift */,
 			);
 			name = Scheduler;
 			sourceTree = "<group>";
@@ -146,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				55A14606206CCAC400B141E4 /* Setting.storyboard */,
+				555152412072455C002708F3 /* SettingViewController.swift */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -154,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				55A14602206CC94B00B141E4 /* Calculator.storyboard */,
+				5551523F20724540002708F3 /* CalculatorViewController.swift */,
 			);
 			name = Calculator;
 			sourceTree = "<group>";
@@ -296,7 +305,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				55A145D7206CC59900B141E4 /* ViewController.swift in Sources */,
+				5551524020724540002708F3 /* CalculatorViewController.swift in Sources */,
 				55A145D5206CC59900B141E4 /* AppDelegate.swift in Sources */,
+				5551524420724578002708F3 /* SchedulerViewController.swift in Sources */,
+				555152422072455C002708F3 /* SettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
