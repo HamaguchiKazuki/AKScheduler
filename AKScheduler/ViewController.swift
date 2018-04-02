@@ -19,15 +19,17 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     ///スワイプ処理の初期化
-    private func setupGestureRecognizer() {
+    func setupGestureRecognizer() {
         //スワイプを判断するための変数を定義
-        let leftSwipeRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(leftSwiped(_:)))
+        let leftSwipeRecognizer  = UISwipeGestureRecognizer(target: self, action: #selector(leftSwiped(_:)))
         let rightSwipeRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(rightSwiped(_:)))
-        let downSwipeRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(downSwiped(_:)))
+        let upSwipeRecognizer    = UISwipeGestureRecognizer(target: self, action: #selector(upSwiped(_:)))
+        let downSwipeRecognizer  = UISwipeGestureRecognizer(target: self, action: #selector(downSwiped(_:)))
         //スワイプの方向を判断
-        leftSwipeRecognizer.direction = .left
+        leftSwipeRecognizer.direction  = .left
         rightSwipeRecognizer.direction = .right
-        //下に遷移したいが指の動きは（下->上）のため.upを定義
+        //上下の遷移は指の動きが逆になるため反対に設定
+        upSwipeRecognizer.direction    = .down
         downSwipeRecognizer.direction  = .up
         //viewに追加
         self.view.addGestureRecognizer(leftSwipeRecognizer)
@@ -38,14 +40,21 @@ class ViewController: UIViewController {
     //左へスワイプしたときに呼ばれる関数
     @objc func leftSwiped(_ sender: Any) {
         print("leftSwipe!")
+        performSegue(withIdentifier: "calculator", sender: nil)
     }
     //右へスワイプしたときに呼ばれる関数
     @objc func rightSwiped(_ sender: Any) {
         print("rightSwipe!")
+        performSegue(withIdentifier: "scheduler", sender: nil)
+    }
+    //上へスワイプしたときに呼ばれる関数
+    @objc func upSwiped(_ sender: Any) {
+        print("upSwipe!")
     }
     //下へスワイプしたときに呼ばれる関数
     @objc func downSwiped(_ sender: Any) {
         print("downSwipe!")
+        performSegue(withIdentifier: "setting", sender: nil)
     }
 }
 
