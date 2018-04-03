@@ -9,7 +9,9 @@ DerivedData/
 .DS_Store
 *.swp #これも指定しておくと便利
 
-UserInterfaceState.xcuserstate # ここで指定
+#キャッシュデータを無視
+UserInterfaceState.xcuserstate 
+
 ## Various settings
 *.pbxuser
 !default.pbxuser
