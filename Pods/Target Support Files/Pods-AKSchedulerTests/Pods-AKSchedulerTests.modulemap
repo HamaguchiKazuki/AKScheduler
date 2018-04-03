@@ -1,0 +1,6 @@
+framework module Pods_AKSchedulerTests {
+  umbrella header "Pods-AKSchedulerTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

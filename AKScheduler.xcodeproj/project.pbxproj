@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19D6479D2737384DD1F1D4FB /* Pods_AKSchedulerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C7FFFEA4790CBFBA237B591 /* Pods_AKSchedulerTests.framework */; };
 		5551524020724540002708F3 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5551523F20724540002708F3 /* CalculatorViewController.swift */; };
 		555152422072455C002708F3 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555152412072455C002708F3 /* SettingViewController.swift */; };
 		5551524420724578002708F3 /* SchedulerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5551524320724578002708F3 /* SchedulerViewController.swift */; };
@@ -20,6 +21,8 @@
 		55A14603206CC94B00B141E4 /* Calculator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55A14602206CC94B00B141E4 /* Calculator.storyboard */; };
 		55A14605206CC99800B141E4 /* Scheduler.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55A14604206CC99800B141E4 /* Scheduler.storyboard */; };
 		55A14607206CCAC400B141E4 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55A14606206CCAC400B141E4 /* Setting.storyboard */; };
+		BADDBFD3601A045961C4D9D0 /* Pods_AKSchedulerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74C408A93CEC5EE80AEE0A3D /* Pods_AKSchedulerUITests.framework */; };
+		DBC1A253CFB49DF0192614EA /* Pods_AKScheduler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DA99D8FBC5C12CF8E828995 /* Pods_AKScheduler.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,9 +43,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05C759A86E0D0E4F84A1317E /* Pods-AKSchedulerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AKSchedulerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AKSchedulerTests/Pods-AKSchedulerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0BB62A58CCB80BECF6A635DB /* Pods-AKScheduler.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AKScheduler.release.xcconfig"; path = "Pods/Target Support Files/Pods-AKScheduler/Pods-AKScheduler.release.xcconfig"; sourceTree = "<group>"; };
+		0DA99D8FBC5C12CF8E828995 /* Pods_AKScheduler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AKScheduler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		33DAA99CDDDA3A7C73B1F494 /* Pods-AKSchedulerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AKSchedulerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AKSchedulerTests/Pods-AKSchedulerTests.release.xcconfig"; sourceTree = "<group>"; };
+		5439C4731547A3CCCB02B5D3 /* Pods-AKScheduler.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AKScheduler.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AKScheduler/Pods-AKScheduler.debug.xcconfig"; sourceTree = "<group>"; };
 		5551523F20724540002708F3 /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
 		555152412072455C002708F3 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		5551524320724578002708F3 /* SchedulerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulerViewController.swift; sourceTree = "<group>"; };
+		555404FF4520EF75D5063386 /* Pods-AKSchedulerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AKSchedulerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AKSchedulerUITests/Pods-AKSchedulerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		55A145D1206CC59900B141E4 /* AKScheduler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AKScheduler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55A145D4206CC59900B141E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55A145D6206CC59900B141E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +68,9 @@
 		55A14602206CC94B00B141E4 /* Calculator.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Calculator.storyboard; sourceTree = "<group>"; };
 		55A14604206CC99800B141E4 /* Scheduler.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Scheduler.storyboard; sourceTree = "<group>"; };
 		55A14606206CCAC400B141E4 /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
+		74C408A93CEC5EE80AEE0A3D /* Pods_AKSchedulerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AKSchedulerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C7FFFEA4790CBFBA237B591 /* Pods_AKSchedulerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AKSchedulerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEB1888CCAD5A738D389F307 /* Pods-AKSchedulerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AKSchedulerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AKSchedulerUITests/Pods-AKSchedulerUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBC1A253CFB49DF0192614EA /* Pods_AKScheduler.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19D6479D2737384DD1F1D4FB /* Pods_AKSchedulerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,12 +94,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BADDBFD3601A045961C4D9D0 /* Pods_AKSchedulerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B3670CD787110D185561A54 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0DA99D8FBC5C12CF8E828995 /* Pods_AKScheduler.framework */,
+				9C7FFFEA4790CBFBA237B591 /* Pods_AKSchedulerTests.framework */,
+				74C408A93CEC5EE80AEE0A3D /* Pods_AKSchedulerUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		55A145C8206CC59900B141E4 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +118,8 @@
 				55A145E8206CC59900B141E4 /* AKSchedulerTests */,
 				55A145F3206CC59A00B141E4 /* AKSchedulerUITests */,
 				55A145D2206CC59900B141E4 /* Products */,
+				6F8CCABA37AC30F566FCB9B3 /* Pods */,
+				3B3670CD787110D185561A54 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -167,6 +194,19 @@
 			name = Calculator;
 			sourceTree = "<group>";
 		};
+		6F8CCABA37AC30F566FCB9B3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5439C4731547A3CCCB02B5D3 /* Pods-AKScheduler.debug.xcconfig */,
+				0BB62A58CCB80BECF6A635DB /* Pods-AKScheduler.release.xcconfig */,
+				05C759A86E0D0E4F84A1317E /* Pods-AKSchedulerTests.debug.xcconfig */,
+				33DAA99CDDDA3A7C73B1F494 /* Pods-AKSchedulerTests.release.xcconfig */,
+				555404FF4520EF75D5063386 /* Pods-AKSchedulerUITests.debug.xcconfig */,
+				AEB1888CCAD5A738D389F307 /* Pods-AKSchedulerUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -174,9 +214,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 55A145F9206CC59A00B141E4 /* Build configuration list for PBXNativeTarget "AKScheduler" */;
 			buildPhases = (
+				447E4297D8DA0CE3B73CC194 /* [CP] Check Pods Manifest.lock */,
 				55A145CD206CC59900B141E4 /* Sources */,
 				55A145CE206CC59900B141E4 /* Frameworks */,
 				55A145CF206CC59900B141E4 /* Resources */,
+				3AE1BDD9C002A83D4DE1B45C /* [CP] Embed Pods Frameworks */,
+				3B52B597A56F0474C66ACC0F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -191,9 +234,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 55A145FC206CC59A00B141E4 /* Build configuration list for PBXNativeTarget "AKSchedulerTests" */;
 			buildPhases = (
+				178D792CF992DE59E27E1A9A /* [CP] Check Pods Manifest.lock */,
 				55A145E1206CC59900B141E4 /* Sources */,
 				55A145E2206CC59900B141E4 /* Frameworks */,
 				55A145E3206CC59900B141E4 /* Resources */,
+				0398631AAAFD07A2B30B1A0C /* [CP] Embed Pods Frameworks */,
+				6A4D4D07E858C6715F4663DE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -209,9 +255,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 55A145FF206CC59A00B141E4 /* Build configuration list for PBXNativeTarget "AKSchedulerUITests" */;
 			buildPhases = (
+				21A95FC9DCFFC619A0D4D4ED /* [CP] Check Pods Manifest.lock */,
 				55A145EC206CC59A00B141E4 /* Sources */,
 				55A145ED206CC59A00B141E4 /* Frameworks */,
 				55A145EE206CC59A00B141E4 /* Resources */,
+				1568B0D17F363CFB4CD7E174 /* [CP] Embed Pods Frameworks */,
+				A1A2D6A2B8B1C8A763503F5D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -298,6 +347,156 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0398631AAAFD07A2B30B1A0C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AKSchedulerTests/Pods-AKSchedulerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1568B0D17F363CFB4CD7E174 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AKSchedulerUITests/Pods-AKSchedulerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		178D792CF992DE59E27E1A9A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AKSchedulerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		21A95FC9DCFFC619A0D4D4ED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AKSchedulerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3AE1BDD9C002A83D4DE1B45C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AKScheduler/Pods-AKScheduler-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AKScheduler/Pods-AKScheduler-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3B52B597A56F0474C66ACC0F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AKScheduler/Pods-AKScheduler-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		447E4297D8DA0CE3B73CC194 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AKScheduler-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A4D4D07E858C6715F4663DE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AKSchedulerTests/Pods-AKSchedulerTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1A2D6A2B8B1C8A763503F5D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AKSchedulerUITests/Pods-AKSchedulerUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		55A145CD206CC59900B141E4 /* Sources */ = {
@@ -476,6 +675,7 @@
 		};
 		55A145FA206CC59A00B141E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5439C4731547A3CCCB02B5D3 /* Pods-AKScheduler.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -491,6 +691,7 @@
 		};
 		55A145FB206CC59A00B141E4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BB62A58CCB80BECF6A635DB /* Pods-AKScheduler.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -506,6 +707,7 @@
 		};
 		55A145FD206CC59A00B141E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05C759A86E0D0E4F84A1317E /* Pods-AKSchedulerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -523,6 +725,7 @@
 		};
 		55A145FE206CC59A00B141E4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33DAA99CDDDA3A7C73B1F494 /* Pods-AKSchedulerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -540,6 +743,7 @@
 		};
 		55A14600206CC59A00B141E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 555404FF4520EF75D5063386 /* Pods-AKSchedulerUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -556,6 +760,7 @@
 		};
 		55A14601206CC59A00B141E4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEB1888CCAD5A738D389F307 /* Pods-AKSchedulerUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
