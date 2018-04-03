@@ -1,0 +1,21 @@
+PODS:
+  - Fabric (1.7.6)
+  - GoogleAnalytics (3.17.0)
+  - R.swift (4.0.0):
+    - R.swift.Library (~> 4.0.0)
+  - R.swift.Library (4.0.0)
+
+DEPENDENCIES:
+  - Fabric
+  - GoogleAnalytics
+  - R.swift
+
+SPEC CHECKSUMS:
+  Fabric: f8d42c893bb187326a7968b62abe55c36a987a46
+  GoogleAnalytics: f42cc53a87a51fe94334821868d9c8481ff47a7b
+  R.swift: d6a5ec2f55a8441dc0ed9f1f8b37d7d11ae85c66
+  R.swift.Library: c3af34921024333546e23b70e70d0b4e0cffca75
+
+PODFILE CHECKSUM: 71a5cf357b52bbd718cd8c90d8b2332360276138
+
+COCOAPODS: 1.4.0
