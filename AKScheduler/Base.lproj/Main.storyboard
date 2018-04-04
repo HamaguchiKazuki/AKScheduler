@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="b4q-8W-1TY">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,18 +10,28 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Page View Controller-->
+        <scene sceneID="wwc-WT-Ews">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="b4q-8W-1TY" customClass="PageViewController" customModule="AKScheduler" customModuleProvider="target" sceneMemberID="viewController">
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gWu-FB-pkm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-542" y="92"/>
+        </scene>
         <!--Scheduler-->
         <scene sceneID="GAI-wu-iuy">
             <objects>
-                <viewControllerPlaceholder storyboardName="Scheduler" id="4fZ-8x-tUE" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="SchedulerViewController" storyboardName="Scheduler" id="4fZ-8x-tUE" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tVZ-dj-iIa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-107" y="324"/>
+            <point key="canvasLocation" x="-506" y="551"/>
         </scene>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AKScheduler" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainViewController" id="BYZ-38-t0r" customClass="MainViewController" customModule="AKScheduler" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -53,7 +63,7 @@
         <!--Setting-->
         <scene sceneID="05A-8n-3ng">
             <objects>
-                <viewControllerPlaceholder storyboardName="Setting" id="ZjY-kb-Fsc" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="SettingViewController" storyboardName="Setting" id="ZjY-kb-Fsc" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3vV-8b-grW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="382" y="667"/>
@@ -61,7 +71,7 @@
         <!--Calculator-->
         <scene sceneID="neI-nF-cg0">
             <objects>
-                <viewControllerPlaceholder storyboardName="Calculator" id="nBR-b7-OGV" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="CalculatorViewController" storyboardName="Calculator" id="nBR-b7-OGV" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oJb-y4-mPZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1036" y="324"/>

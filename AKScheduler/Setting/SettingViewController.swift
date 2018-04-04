@@ -12,8 +12,7 @@ class SettingViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setupGestureRecognizer()
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,7 +20,21 @@ class SettingViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    ///スワイプ処理の初期化
+    func setupGestureRecognizer() {
+        //スワイプを判断するための変数を定義
+        let upSwipeRecognizer    = UISwipeGestureRecognizer(target: self, action: #selector(upSwiped(_:)))
+        //上下の遷移は指の動きが逆になるため反対に設定
+        upSwipeRecognizer.direction    = .down
+        //viewに追加
+        self.view.addGestureRecognizer(upSwipeRecognizer)
+    }
+    //MARK: - UISwipeGestureを用いて画面遷移
+    //上へスワイプしたときに呼ばれる関数
+    @objc func upSwiped(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 

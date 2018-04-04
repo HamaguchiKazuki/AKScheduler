@@ -23,15 +23,15 @@ class CalculatorViewController: UIViewController {
     ///スワイプ処理の初期化
     func setupGestureRecognizer() {
         //スワイプを判断するための変数を定義
-        let leftSwipeRecognizer  = UISwipeGestureRecognizer(target: self, action: #selector(leftSwiped(_:)))
+        let rightSwipeRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(rightSwiped(_:)))
         //スワイプの方向を判断
-        leftSwipeRecognizer.direction  = .left
-        //viewに追加
-        self.view.addGestureRecognizer(leftSwipeRecognizer)
+        rightSwipeRecognizer.direction = .right
+        self.view.addGestureRecognizer(rightSwipeRecognizer)
     }
-    
-    @objc func leftSwiped(_ sender: Any) {
-        print("back main")
+    //MARK: - UISwipeGestureを用いて画面遷移
+    //右へスワイプしたときに呼ばれる関数
+    @objc func rightSwiped(_ sender: Any) {
+        print("rightSwipe!")
         dismiss(animated: true, completion: nil)
     }
     /*
