@@ -24,6 +24,7 @@
 		55A43B5D2074C4AA004136F4 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A43B5C2074C4AA004136F4 /* PageViewController.swift */; };
 		55A43B672075F019004136F4 /* AnalogClockView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55A43B662075F019004136F4 /* AnalogClockView.xib */; };
 		55A43B692075F081004136F4 /* AnalogClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A43B682075F081004136F4 /* AnalogClockView.swift */; };
+		55A43B6D2076019E004136F4 /* PageMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A43B6C2076019E004136F4 /* PageMenuViewController.swift */; };
 		BADDBFD3601A045961C4D9D0 /* Pods_AKSchedulerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74C408A93CEC5EE80AEE0A3D /* Pods_AKSchedulerUITests.framework */; };
 		DBC1A253CFB49DF0192614EA /* Pods_AKScheduler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DA99D8FBC5C12CF8E828995 /* Pods_AKScheduler.framework */; };
 /* End PBXBuildFile section */
@@ -74,6 +75,7 @@
 		55A43B5C2074C4AA004136F4 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		55A43B662075F019004136F4 /* AnalogClockView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnalogClockView.xib; sourceTree = "<group>"; };
 		55A43B682075F081004136F4 /* AnalogClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalogClockView.swift; sourceTree = "<group>"; };
+		55A43B6C2076019E004136F4 /* PageMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageMenuViewController.swift; sourceTree = "<group>"; };
 		74C408A93CEC5EE80AEE0A3D /* Pods_AKSchedulerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AKSchedulerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C7FFFEA4790CBFBA237B591 /* Pods_AKSchedulerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AKSchedulerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEB1888CCAD5A738D389F307 /* Pods-AKSchedulerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AKSchedulerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AKSchedulerUITests/Pods-AKSchedulerUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				55A145D4206CC59900B141E4 /* AppDelegate.swift */,
 				55A145D6206CC59900B141E4 /* MainViewController.swift */,
 				55A43B5C2074C4AA004136F4 /* PageViewController.swift */,
+				55A43B6C2076019E004136F4 /* PageMenuViewController.swift */,
 				55A145D8206CC59900B141E4 /* Main.storyboard */,
 				55A145DB206CC59900B141E4 /* Assets.xcassets */,
 				55A145DD206CC59900B141E4 /* LaunchScreen.storyboard */,
@@ -521,6 +524,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55A43B6D2076019E004136F4 /* PageMenuViewController.swift in Sources */,
 				55A145D7206CC59900B141E4 /* MainViewController.swift in Sources */,
 				5551524020724540002708F3 /* CalculatorViewController.swift in Sources */,
 				55A145D5206CC59900B141E4 /* AppDelegate.swift in Sources */,
