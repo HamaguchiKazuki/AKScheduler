@@ -22,6 +22,8 @@
 		55A14605206CC99800B141E4 /* Scheduler.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55A14604206CC99800B141E4 /* Scheduler.storyboard */; };
 		55A14607206CCAC400B141E4 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55A14606206CCAC400B141E4 /* Setting.storyboard */; };
 		55A43B5D2074C4AA004136F4 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A43B5C2074C4AA004136F4 /* PageViewController.swift */; };
+		55A43B672075F019004136F4 /* AnalogClockView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55A43B662075F019004136F4 /* AnalogClockView.xib */; };
+		55A43B692075F081004136F4 /* AnalogClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A43B682075F081004136F4 /* AnalogClockView.swift */; };
 		BADDBFD3601A045961C4D9D0 /* Pods_AKSchedulerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74C408A93CEC5EE80AEE0A3D /* Pods_AKSchedulerUITests.framework */; };
 		DBC1A253CFB49DF0192614EA /* Pods_AKScheduler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DA99D8FBC5C12CF8E828995 /* Pods_AKScheduler.framework */; };
 /* End PBXBuildFile section */
@@ -70,6 +72,8 @@
 		55A14604206CC99800B141E4 /* Scheduler.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Scheduler.storyboard; sourceTree = "<group>"; };
 		55A14606206CCAC400B141E4 /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
 		55A43B5C2074C4AA004136F4 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		55A43B662075F019004136F4 /* AnalogClockView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnalogClockView.xib; sourceTree = "<group>"; };
+		55A43B682075F081004136F4 /* AnalogClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalogClockView.swift; sourceTree = "<group>"; };
 		74C408A93CEC5EE80AEE0A3D /* Pods_AKSchedulerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AKSchedulerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C7FFFEA4790CBFBA237B591 /* Pods_AKSchedulerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AKSchedulerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEB1888CCAD5A738D389F307 /* Pods-AKSchedulerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AKSchedulerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AKSchedulerUITests/Pods-AKSchedulerUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -138,6 +142,7 @@
 		55A145D3206CC59900B141E4 /* AKScheduler */ = {
 			isa = PBXGroup;
 			children = (
+				55A43B612075E9A1004136F4 /* xibfiles */,
 				55A1460A206CCDD300B141E4 /* Calculator */,
 				55A14609206CCDCD00B141E4 /* Setting */,
 				55A14608206CCD9C00B141E4 /* Scheduler */,
@@ -195,6 +200,15 @@
 				5551523F20724540002708F3 /* CalculatorViewController.swift */,
 			);
 			name = Calculator;
+			sourceTree = "<group>";
+		};
+		55A43B612075E9A1004136F4 /* xibfiles */ = {
+			isa = PBXGroup;
+			children = (
+				55A43B662075F019004136F4 /* AnalogClockView.xib */,
+				55A43B682075F081004136F4 /* AnalogClockView.swift */,
+			);
+			name = xibfiles;
 			sourceTree = "<group>";
 		};
 		6F8CCABA37AC30F566FCB9B3 /* Pods */ = {
@@ -326,6 +340,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55A43B672075F019004136F4 /* AnalogClockView.xib in Resources */,
 				55A14605206CC99800B141E4 /* Scheduler.storyboard in Resources */,
 				55A145DF206CC59900B141E4 /* LaunchScreen.storyboard in Resources */,
 				55A145DC206CC59900B141E4 /* Assets.xcassets in Resources */,
@@ -509,6 +524,7 @@
 				55A145D7206CC59900B141E4 /* MainViewController.swift in Sources */,
 				5551524020724540002708F3 /* CalculatorViewController.swift in Sources */,
 				55A145D5206CC59900B141E4 /* AppDelegate.swift in Sources */,
+				55A43B692075F081004136F4 /* AnalogClockView.swift in Sources */,
 				55A43B5D2074C4AA004136F4 /* PageViewController.swift in Sources */,
 				5551524420724578002708F3 /* SchedulerViewController.swift in Sources */,
 				555152422072455C002708F3 /* SettingViewController.swift in Sources */,
