@@ -12,6 +12,7 @@ class PageViewController: UIPageViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor.brown
         self.setViewControllers([getMainVC()], direction: .forward, animated: true, completion: nil)
         self.dataSource = self
     }
@@ -40,9 +41,6 @@ extension PageViewController:UIPageViewControllerDataSource {
         if viewController.isKind(of: MainViewController.self) {
             //画面をMain->Calculatorに移動させる
             return getCalculatorVC()
-        } else if viewController.isKind(of: SchedulerViewController.self) {
-            //画面をScheduler->Mainに移動させる
-            return getMainVC()
         } else {
             return nil
         }
@@ -52,10 +50,7 @@ extension PageViewController:UIPageViewControllerDataSource {
         if viewController.isKind(of: MainViewController.self) {
             //画面をMain->Schedulerに移動させる
             return getSchedulerVC()
-        } else if viewController.isKind(of: CalculatorViewController.self){
-            //画面をCalculator->Mainに移動させる
-            return getMainVC()
-        } else {
+        }  else {
             return nil
         }
     }
