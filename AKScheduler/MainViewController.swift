@@ -18,6 +18,8 @@ class MainViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
     ///スワイプ処理の初期化
     func setupGestureRecognizer() {
         //スワイプを判断するための変数を定義
