@@ -9,7 +9,6 @@ target 'AKScheduler' do
   pod 'R.swift'
   pod 'Fabric'
   pod 'GoogleAnalytics'
-  pod 'PageMenu'
 
   target 'AKSchedulerTests' do
     inherit! :search_paths

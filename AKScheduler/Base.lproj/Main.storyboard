@@ -57,9 +57,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="left" id="mJv-dZ-KPd" userLabel="LeftSwiped"/>
-                <swipeGestureRecognizer direction="right" id="4QE-q7-hGI" userLabel="RightSwiped"/>
-                <swipeGestureRecognizer direction="down" id="IdA-Tg-cMi" userLabel="DownSwiped"/>
             </objects>
             <point key="canvasLocation" x="383.19999999999999" y="92.203898050974516"/>
         </scene>
