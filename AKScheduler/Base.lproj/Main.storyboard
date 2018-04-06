@@ -41,13 +41,22 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cti-zG-hGo" customClass="AnalogClockView" customModule="AKScheduler" customModuleProvider="target">
-                                <rect key="frame" x="67" y="129" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cti-zG-hGo" customClass="AnalogClockView" customModule="AKScheduler" customModuleProvider="target">
+                                <rect key="frame" x="27" y="143" width="320" height="320"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="320" id="7QU-GJ-A3l"/>
+                                    <constraint firstAttribute="width" constant="320" id="awq-ex-unW"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Cti-zG-hGo" secondAttribute="bottom" constant="204" id="bZw-bZ-E3M"/>
+                            <constraint firstItem="Cti-zG-hGo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="27" id="jEr-UI-B5G"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Cti-zG-hGo" secondAttribute="trailing" constant="28" id="oTj-AI-YXL"/>
+                            <constraint firstItem="Cti-zG-hGo" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="143" id="uyP-6P-5G7"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
@@ -61,7 +70,7 @@
                 <swipeGestureRecognizer direction="right" id="4QE-q7-hGI" userLabel="RightSwiped"/>
                 <swipeGestureRecognizer direction="down" id="IdA-Tg-cMi" userLabel="DownSwiped"/>
             </objects>
-            <point key="canvasLocation" x="383.19999999999999" y="92.203898050974516"/>
+            <point key="canvasLocation" x="382.8125" y="91.9921875"/>
         </scene>
         <!--Setting-->
         <scene sceneID="05A-8n-3ng">
