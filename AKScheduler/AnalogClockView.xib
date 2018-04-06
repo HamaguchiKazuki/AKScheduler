@@ -12,11 +12,24 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" red="0.38858150460000002" green="1" blue="0.43902630079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <view contentMode="scaleAspectFit" id="iN0-l3-epB" customClass="AMNowClockView" customModule="AMNowClockView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="isShowSelectedTime" value="YES"/>
+                <userDefinedRuntimeAttribute type="image" keyPath="clockImage" value="スクリーンショット 2018-04-06 16.08.57-1"/>
+                <userDefinedRuntimeAttribute type="color" keyPath="clockColor">
+                    <color key="value" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="65" y="27"/>
         </view>
     </objects>
+    <resources>
+        <image name="スクリーンショット 2018-04-06 16.08.57-1" width="667" height="667"/>
+    </resources>
 </document>

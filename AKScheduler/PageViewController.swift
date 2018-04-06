@@ -12,7 +12,7 @@ class PageViewController: UIPageViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.brown
+        self.view.backgroundColor = UIColor.white
         self.setViewControllers([getMainVC()], direction: .forward, animated: true, completion: nil)
         self.dataSource = self
     }
