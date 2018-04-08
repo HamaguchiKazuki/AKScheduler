@@ -10,7 +10,8 @@ target 'AKScheduler' do
   pod 'Fabric'
   pod 'GoogleAnalytics'
   pod 'AMNowClockView'
-  
+  pod 'Expression'
+    
   target 'AKSchedulerTests' do
     inherit! :search_paths
     # Pods for testing

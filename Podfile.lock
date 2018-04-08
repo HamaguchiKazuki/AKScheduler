@@ -1,5 +1,6 @@
 PODS:
   - AMNowClockView (1.0)
+  - Expression (0.12.9)
   - Fabric (1.7.6)
   - GoogleAnalytics (3.17.0)
   - R.swift (4.0.0):
@@ -8,17 +9,19 @@ PODS:
 
 DEPENDENCIES:
   - AMNowClockView
+  - Expression
   - Fabric
   - GoogleAnalytics
   - R.swift
 
 SPEC CHECKSUMS:
   AMNowClockView: f70c4c58a4addc743a566bc7028a5e58e728e4b9
+  Expression: 009720cde3259d5e39dc18f1d32504fa136b4a09
   Fabric: f8d42c893bb187326a7968b62abe55c36a987a46
   GoogleAnalytics: f42cc53a87a51fe94334821868d9c8481ff47a7b
   R.swift: d6a5ec2f55a8441dc0ed9f1f8b37d7d11ae85c66
   R.swift.Library: c3af34921024333546e23b70e70d0b4e0cffca75
 
-PODFILE CHECKSUM: 6a3a68e3c5542d70f32cc12139a3c26c43cf97b6
+PODFILE CHECKSUM: abc8637736fec95caf4ddf9f7bad160876f93f55
 
 COCOAPODS: 1.4.0

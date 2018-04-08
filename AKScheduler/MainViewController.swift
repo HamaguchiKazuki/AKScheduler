@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,4 +36,5 @@ class MainViewController: UIViewController {
         performSegue(withIdentifier: "setting", sender: nil)
     }
 }
+
 
