@@ -11,7 +11,8 @@ target 'AKScheduler' do
   pod 'GoogleAnalytics'
   pod 'AMNowClockView'
   pod 'Expression'
-    
+  pod 'JBDatePicker'
+
   target 'AKSchedulerTests' do
     inherit! :search_paths
     # Pods for testing

@@ -18,8 +18,8 @@ class CalculatorViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         //ビューがロードされた時点で式と答えのラベルは空する
-        formulaLabel.text = ""
-        answerLabel.text  = ""
+        formulaLabel.text = "値を入力してね"
+        answerLabel.text  = "答えが出るよ"
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,6 +28,9 @@ class CalculatorViewController: UIViewController {
     }
     @IBAction func inputFormula(_ sender: UIButton) {
         //ボタン（Cと=以外が押されたら式を表示する）
+        if formulaLabel.text == "値を入力してね" {
+            formulaLabel.text = ""
+        }
         guard let formulaText = formulaLabel.text else {
             return
         }
@@ -39,12 +42,15 @@ class CalculatorViewController: UIViewController {
     
     @IBAction func clearCalculation(_ sender: UIButton) {
         //Cボタンが押されたら式と答えをクリアする
-        formulaLabel.text = ""
-        answerLabel.text  = ""
+        formulaLabel.text = "値を入力してね"
+        answerLabel.text  = "答えが出るよ"
     }
     
     @IBAction func answerCalculate(_ sender: UIButton) {
         //=ボタンが押されたら答えを計算して表示する
+        if answerLabel.text == "答えが出るよ" {
+            answerLabel.text = ""
+        }
         guard let formulaText = formulaLabel.text else {
             return
         }
