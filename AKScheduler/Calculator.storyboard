@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GIe-G3-gy4">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,177 +17,535 @@
             <objects>
                 <viewController id="GIe-G3-gy4" customClass="CalculatorViewController" customModule="AKScheduler" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="R9k-L9-JEj">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="式用のラベル" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ACp-Cn-jLR">
-                                <rect key="frame" x="16" y="34" width="343" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="DGg-9q-OMb"/>
-                                    <constraint firstAttribute="width" constant="343" id="MLU-pg-vpG"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="答え用のラベル" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ms3-hA-lLM">
-                                <rect key="frame" x="119" y="89" width="187" height="34"/>
+                                <rect key="frame" x="85.5" y="77" width="235" height="32"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="WJ8-ax-VSq"/>
-                                    <constraint firstAttribute="width" constant="187" id="v4H-iG-GV3"/>
+                                    <constraint firstAttribute="height" constant="32" id="8ah-hB-Cql"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="32" id="Bds-B0-woD"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="235" id="PoL-Sd-QoR"/>
+                                    <constraint firstAttribute="width" constant="235" id="sRR-Zt-VHB"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="waE-VD-bQN">
-                                <rect key="frame" x="49" y="309" width="60" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aX6-gj-vj6">
-                                <rect key="frame" x="5" y="241" width="60" height="60"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="式用のラベル" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ACp-Cn-jLR">
+                                <rect key="frame" x="0.0" y="36.5" width="320" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="aTW-7C-cNB"/>
-                                    <constraint firstAttribute="width" constant="60" id="dP8-aj-1Vb"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="320" id="9xd-lN-LSq"/>
+                                    <constraint firstAttribute="height" constant="40" id="EtH-Kg-gcC"/>
+                                    <constraint firstAttribute="width" constant="320" id="VmE-XW-U7l"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="yxf-gQ-9qz"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lzN-Kv-bhC">
-                                <rect key="frame" x="75" y="241" width="60" height="60"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="2gn-md-gKt"/>
-                                    <constraint firstAttribute="width" constant="60" id="tAA-Lv-Ll2"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aLk-Ur-34e">
-                                <rect key="frame" x="185" y="241" width="60" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CJK-X4-6sh">
-                                <rect key="frame" x="253" y="241" width="60" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YQ6-Rv-Y05">
-                                <rect key="frame" x="49" y="377" width="60" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJS-Tt-Njo">
-                                <rect key="frame" x="117" y="445" width="60" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="waK-HE-Gjx">
-                                <rect key="frame" x="185" y="309" width="60" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YPl-jb-hId">
-                                <rect key="frame" x="253" y="309" width="60" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PGn-i6-aY8">
-                                <rect key="frame" x="253" y="377" width="60" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n61-0g-qtN">
-                                <rect key="frame" x="253" y="445" width="60" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kiw-mN-69N">
-                                <rect key="frame" x="253" y="513" width="60" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dot-87-wLR">
-                                <rect key="frame" x="185" y="377" width="60" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8xl-wd-lcr">
-                                <rect key="frame" x="185" y="445" width="60" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xvJ-gz-N9e">
-                                <rect key="frame" x="185" y="513" width="60" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zwA-ou-NBq">
-                                <rect key="frame" x="49" y="513" width="128" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="siP-hb-HfG">
-                                <rect key="frame" x="49" y="445" width="60" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UHl-tG-CoE">
-                                <rect key="frame" x="117" y="377" width="60" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f45-Dg-0pK">
-                                <rect key="frame" x="117" y="309" width="60" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                            </button>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="=" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vjL-WA-l7R">
-                                <rect key="frame" x="32" y="90" width="79" height="33"/>
+                                <rect key="frame" x="1" y="78" width="78" height="31"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="33" id="rib-EM-3mW"/>
-                                    <constraint firstAttribute="width" constant="79" id="zn5-5c-dyX"/>
+                                    <constraint firstAttribute="width" constant="78" id="3Df-JU-iHt"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="31" id="VIs-zG-PJM"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="78" id="sCR-V1-HGW"/>
+                                    <constraint firstAttribute="height" constant="31" id="vmH-Qo-PyF"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3CM-1A-jmQ">
+                                <rect key="frame" x="25" y="120" width="270" height="340"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ego-GL-xxH">
+                                        <rect key="frame" x="0.0" y="0.0" width="270" height="340"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="8h7-Di-dXg">
+                                                <rect key="frame" x="0.0" y="0.0" width="270" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aX6-gj-vj6" customClass="BorderedButton" customModule="AKScheduler" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                        <color key="backgroundColor" red="0.17395872909999999" green="0.52881107230000002" blue="0.2371855615" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="60" id="blR-ya-fB5"/>
+                                                            <constraint firstAttribute="height" constant="60" id="lPh-7Y-U1A"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                                        <state key="normal" title="C">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="30"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" red="0.17395872909999999" green="0.52881107230000002" blue="0.2371855615" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="clearCalculation:" destination="GIe-G3-gy4" eventType="touchUpInside" id="Yya-m9-tVh"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lzN-Kv-bhC" customClass="BorderedButton" customModule="AKScheduler" customModuleProvider="target">
+                                                        <rect key="frame" x="70" y="0.0" width="60" height="60"/>
+                                                        <color key="backgroundColor" red="0.17395872909999999" green="0.52881107230000002" blue="0.2371855615" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                                        <state key="normal" title="(">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" red="0.17395872909678356" green="0.52881107233502544" blue="0.237185561517954" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="30"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="inputFormula:" destination="GIe-G3-gy4" eventType="touchUpInside" id="GnG-o4-iOU"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aLk-Ur-34e" customClass="BorderedButton" customModule="AKScheduler" customModuleProvider="target">
+                                                        <rect key="frame" x="140" y="0.0" width="60" height="60"/>
+                                                        <color key="backgroundColor" red="0.17395872909999999" green="0.52881107230000002" blue="0.2371855615" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                                        <state key="normal" title=")">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" red="0.17395872909678356" green="0.52881107233502544" blue="0.237185561517954" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="30"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="inputFormula:" destination="GIe-G3-gy4" eventType="touchUpInside" id="ayp-wk-Gse"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CJK-X4-6sh" customClass="BorderedButton" customModule="AKScheduler" customModuleProvider="target">
+                                                        <rect key="frame" x="210" y="0.0" width="60" height="60"/>
+                                                        <color key="backgroundColor" red="0.17395872909999999" green="0.52881107230000002" blue="0.2371855615" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                                        <state key="normal" title="=">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" red="0.17395872909678356" green="0.52881107233502544" blue="0.237185561517954" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="30"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="answerCalculate:" destination="GIe-G3-gy4" eventType="touchUpInside" id="ae2-mB-h3t"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="lzN-Kv-bhC" firstAttribute="height" secondItem="aX6-gj-vj6" secondAttribute="height" id="SDg-9E-d0G"/>
+                                                    <constraint firstItem="aLk-Ur-34e" firstAttribute="height" secondItem="aX6-gj-vj6" secondAttribute="height" id="U3a-Sb-T5V"/>
+                                                    <constraint firstItem="aLk-Ur-34e" firstAttribute="width" secondItem="aX6-gj-vj6" secondAttribute="width" id="Zie-xk-QiQ"/>
+                                                    <constraint firstItem="lzN-Kv-bhC" firstAttribute="width" secondItem="aX6-gj-vj6" secondAttribute="width" id="w9l-RW-q8E"/>
+                                                    <constraint firstItem="CJK-X4-6sh" firstAttribute="width" secondItem="aX6-gj-vj6" secondAttribute="width" id="zCo-Mr-1ig"/>
+                                                    <constraint firstItem="CJK-X4-6sh" firstAttribute="height" secondItem="aX6-gj-vj6" secondAttribute="height" id="zaa-8M-KlV"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="d7w-3v-3Pl">
+                                                <rect key="frame" x="0.0" y="70" width="270" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="waE-VD-bQN" customClass="BorderedButton" customModule="AKScheduler" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                                        <state key="normal" title="7">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="30"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="inputFormula:" destination="GIe-G3-gy4" eventType="touchUpInside" id="yDW-xH-7Ve"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f45-Dg-0pK" customClass="BorderedButton" customModule="AKScheduler" customModuleProvider="target">
+                                                        <rect key="frame" x="70" y="0.0" width="60" height="60"/>
+                                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                                        <state key="normal" title="8">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="30"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="inputFormula:" destination="GIe-G3-gy4" eventType="touchUpInside" id="f71-tV-hNh"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="waK-HE-Gjx" customClass="BorderedButton" customModule="AKScheduler" customModuleProvider="target">
+                                                        <rect key="frame" x="140" y="0.0" width="60" height="60"/>
+                                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                                        <state key="normal" title="9">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="30"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="inputFormula:" destination="GIe-G3-gy4" eventType="touchUpInside" id="oBy-C6-TqI"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YPl-jb-hId" customClass="BorderedButton" customModule="AKScheduler" customModuleProvider="target">
+                                                        <rect key="frame" x="210" y="0.0" width="60" height="60"/>
+                                                        <color key="backgroundColor" red="0.17395872909999999" green="0.52881107230000002" blue="0.2371855615" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                                        <state key="normal" title="+">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="30"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" red="0.17395872909999999" green="0.52881107230000002" blue="0.2371855615" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="inputFormula:" destination="GIe-G3-gy4" eventType="touchUpInside" id="qqG-Km-B4l"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1vg-Iq-NUG">
+                                                <rect key="frame" x="0.0" y="140" width="270" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YQ6-Rv-Y05" customClass="BorderedButton" customModule="AKScheduler" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                                        <state key="normal" title="4">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="30"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="inputFormula:" destination="GIe-G3-gy4" eventType="touchUpInside" id="mz8-bS-WTG"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UHl-tG-CoE" customClass="BorderedButton" customModule="AKScheduler" customModuleProvider="target">
+                                                        <rect key="frame" x="70" y="0.0" width="60" height="60"/>
+                                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                                        <state key="normal" title="5">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="30"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="inputFormula:" destination="GIe-G3-gy4" eventType="touchUpInside" id="7HE-T2-qdI"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qXq-6i-v6F" customClass="BorderedButton" customModule="AKScheduler" customModuleProvider="target">
+                                                        <rect key="frame" x="140" y="0.0" width="60" height="60"/>
+                                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                                        <state key="normal" title="6">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="30"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="inputFormula:" destination="GIe-G3-gy4" eventType="touchUpInside" id="z9K-VH-iOn"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w9c-ha-yUg" customClass="BorderedButton" customModule="AKScheduler" customModuleProvider="target">
+                                                        <rect key="frame" x="210" y="0.0" width="60" height="60"/>
+                                                        <color key="backgroundColor" red="0.17395872909999999" green="0.52881107230000002" blue="0.2371855615" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                                        <state key="normal" title="−">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="30"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" red="0.17395872909999999" green="0.52881107230000002" blue="0.2371855615" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="inputFormula:" destination="GIe-G3-gy4" eventType="touchUpInside" id="vzP-ij-nhH"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="EN1-8e-ZdP">
+                                                <rect key="frame" x="0.0" y="210" width="270" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y17-uy-v8d" customClass="BorderedButton" customModule="AKScheduler" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                                        <state key="normal" title="1">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="30"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="inputFormula:" destination="GIe-G3-gy4" eventType="touchUpInside" id="ewg-fL-FZU"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Che-5b-cct" customClass="BorderedButton" customModule="AKScheduler" customModuleProvider="target">
+                                                        <rect key="frame" x="70" y="0.0" width="60" height="60"/>
+                                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                                        <state key="normal" title="2">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="30"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="inputFormula:" destination="GIe-G3-gy4" eventType="touchUpInside" id="ra2-II-zGJ"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8T0-cd-RvQ" customClass="BorderedButton" customModule="AKScheduler" customModuleProvider="target">
+                                                        <rect key="frame" x="140" y="0.0" width="60" height="60"/>
+                                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                                        <state key="normal" title="3">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="30"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="inputFormula:" destination="GIe-G3-gy4" eventType="touchUpInside" id="7ex-lK-e8P"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EsJ-7u-f2Q" customClass="BorderedButton" customModule="AKScheduler" customModuleProvider="target">
+                                                        <rect key="frame" x="210" y="0.0" width="60" height="60"/>
+                                                        <color key="backgroundColor" red="0.17395872909999999" green="0.52881107230000002" blue="0.2371855615" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                                        <state key="normal" title="×">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" red="0.17395872909999999" green="0.52881107230000002" blue="0.2371855615" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="30"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="inputFormula:" destination="GIe-G3-gy4" eventType="touchUpInside" id="8A4-kS-sWo"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="8jl-DA-aNh">
+                                                <rect key="frame" x="0.0" y="280" width="270" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fED-LJ-riJ" customClass="BorderedButton" customModule="AKScheduler" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="130" height="60"/>
+                                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="130" id="KBD-Qb-eHY"/>
+                                                            <constraint firstAttribute="height" constant="60" id="Ljl-uR-E7K"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="32"/>
+                                                        <state key="normal" title="0">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="30"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="inputFormula:" destination="GIe-G3-gy4" eventType="touchUpInside" id="dqc-B4-Ej2"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wJ1-Ns-0hA" customClass="BorderedButton" customModule="AKScheduler" customModuleProvider="target">
+                                                        <rect key="frame" x="140" y="0.0" width="60" height="60"/>
+                                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                                        <state key="normal" title=".">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="30"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="inputFormula:" destination="GIe-G3-gy4" eventType="touchUpInside" id="TQD-Js-2Gk"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zBV-3i-e21" customClass="BorderedButton" customModule="AKScheduler" customModuleProvider="target">
+                                                        <rect key="frame" x="210" y="0.0" width="60" height="60"/>
+                                                        <color key="backgroundColor" red="0.17395872909999999" green="0.52881107230000002" blue="0.2371855615" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                                        <state key="normal" title="÷">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="30"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" red="0.17395872909999999" green="0.52881107230000002" blue="0.2371855615" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="inputFormula:" destination="GIe-G3-gy4" eventType="touchUpInside" id="cD4-Rc-yWq"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="f45-Dg-0pK" firstAttribute="width" secondItem="aX6-gj-vj6" secondAttribute="width" id="0Jy-7U-TPm"/>
+                                            <constraint firstItem="YPl-jb-hId" firstAttribute="width" secondItem="aX6-gj-vj6" secondAttribute="width" id="1QK-J4-bi4"/>
+                                            <constraint firstItem="wJ1-Ns-0hA" firstAttribute="height" secondItem="aX6-gj-vj6" secondAttribute="height" id="2EP-9O-xhX"/>
+                                            <constraint firstItem="UHl-tG-CoE" firstAttribute="height" secondItem="aX6-gj-vj6" secondAttribute="height" id="3Od-5B-8TA"/>
+                                            <constraint firstItem="8T0-cd-RvQ" firstAttribute="width" secondItem="aX6-gj-vj6" secondAttribute="width" id="5KQ-aX-C7h"/>
+                                            <constraint firstItem="zBV-3i-e21" firstAttribute="height" secondItem="aX6-gj-vj6" secondAttribute="height" id="7Z4-BL-AOH"/>
+                                            <constraint firstAttribute="width" secondItem="ego-GL-xxH" secondAttribute="height" multiplier="27:34" id="7cx-Tg-hIU"/>
+                                            <constraint firstItem="zBV-3i-e21" firstAttribute="width" secondItem="aX6-gj-vj6" secondAttribute="width" id="7sO-gU-eMJ"/>
+                                            <constraint firstItem="waE-VD-bQN" firstAttribute="width" secondItem="aX6-gj-vj6" secondAttribute="width" id="8Bo-gE-YpD"/>
+                                            <constraint firstItem="waE-VD-bQN" firstAttribute="height" secondItem="aX6-gj-vj6" secondAttribute="height" id="8oO-X7-zQm"/>
+                                            <constraint firstItem="EsJ-7u-f2Q" firstAttribute="width" secondItem="aX6-gj-vj6" secondAttribute="width" id="8x9-yF-ygr"/>
+                                            <constraint firstItem="w9c-ha-yUg" firstAttribute="width" secondItem="aX6-gj-vj6" secondAttribute="width" id="CPh-S3-MWK"/>
+                                            <constraint firstItem="UHl-tG-CoE" firstAttribute="width" secondItem="aX6-gj-vj6" secondAttribute="width" id="Eyd-O4-hvm"/>
+                                            <constraint firstItem="waK-HE-Gjx" firstAttribute="width" secondItem="aX6-gj-vj6" secondAttribute="width" id="GeK-Ng-0wC"/>
+                                            <constraint firstItem="qXq-6i-v6F" firstAttribute="height" secondItem="aX6-gj-vj6" secondAttribute="height" id="LBI-Bn-IVQ"/>
+                                            <constraint firstItem="wJ1-Ns-0hA" firstAttribute="width" secondItem="aX6-gj-vj6" secondAttribute="width" id="NlI-5w-Zq0"/>
+                                            <constraint firstItem="waK-HE-Gjx" firstAttribute="height" secondItem="aX6-gj-vj6" secondAttribute="height" id="Qor-pU-L0z"/>
+                                            <constraint firstItem="Che-5b-cct" firstAttribute="height" secondItem="aX6-gj-vj6" secondAttribute="height" id="Rdh-3N-xWO"/>
+                                            <constraint firstItem="y17-uy-v8d" firstAttribute="width" secondItem="aX6-gj-vj6" secondAttribute="width" id="TyX-RX-buY"/>
+                                            <constraint firstItem="YQ6-Rv-Y05" firstAttribute="width" secondItem="aX6-gj-vj6" secondAttribute="width" id="bEl-vg-JrT"/>
+                                            <constraint firstItem="Che-5b-cct" firstAttribute="width" secondItem="aX6-gj-vj6" secondAttribute="width" id="cWs-Od-rV8"/>
+                                            <constraint firstItem="YPl-jb-hId" firstAttribute="height" secondItem="aX6-gj-vj6" secondAttribute="height" id="djx-GD-eW8"/>
+                                            <constraint firstItem="YQ6-Rv-Y05" firstAttribute="height" secondItem="aX6-gj-vj6" secondAttribute="height" id="h3d-NK-vBJ"/>
+                                            <constraint firstItem="8T0-cd-RvQ" firstAttribute="height" secondItem="aX6-gj-vj6" secondAttribute="height" id="iwE-dE-Lmo"/>
+                                            <constraint firstItem="w9c-ha-yUg" firstAttribute="height" secondItem="aX6-gj-vj6" secondAttribute="height" id="jv5-Eo-GHU"/>
+                                            <constraint firstItem="qXq-6i-v6F" firstAttribute="width" secondItem="aX6-gj-vj6" secondAttribute="width" id="qrv-Lq-K2T"/>
+                                            <constraint firstItem="f45-Dg-0pK" firstAttribute="height" secondItem="aX6-gj-vj6" secondAttribute="height" id="wmY-Zn-2KW"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="3CM-1A-jmQ" secondAttribute="height" multiplier="27:34" id="wCs-N2-LSf"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="ACp-Cn-jLR" firstAttribute="top" secondItem="awQ-mq-zyb" secondAttribute="top" constant="14" id="8LJ-Uf-Ida"/>
-                            <constraint firstItem="lzN-Kv-bhC" firstAttribute="leading" secondItem="aX6-gj-vj6" secondAttribute="trailing" constant="10" id="9GG-Hw-YkE"/>
-                            <constraint firstItem="aX6-gj-vj6" firstAttribute="leading" secondItem="awQ-mq-zyb" secondAttribute="leading" constant="5" id="D9o-aX-155"/>
-                            <constraint firstItem="ms3-hA-lLM" firstAttribute="centerX" secondItem="R9k-L9-JEj" secondAttribute="centerX" constant="25" id="QBy-au-noy"/>
-                            <constraint firstItem="ms3-hA-lLM" firstAttribute="top" secondItem="ACp-Cn-jLR" secondAttribute="bottom" constant="15" id="RJz-sc-COo"/>
-                            <constraint firstItem="vjL-WA-l7R" firstAttribute="centerX" secondItem="R9k-L9-JEj" secondAttribute="centerX" constant="-116" id="jQd-mI-7cu"/>
-                            <constraint firstItem="ACp-Cn-jLR" firstAttribute="centerX" secondItem="R9k-L9-JEj" secondAttribute="centerX" id="kfT-eW-ggf"/>
-                            <constraint firstItem="vjL-WA-l7R" firstAttribute="top" secondItem="ACp-Cn-jLR" secondAttribute="bottom" constant="16" id="taH-o6-hbI"/>
+                            <constraint firstItem="3CM-1A-jmQ" firstAttribute="centerX" secondItem="R9k-L9-JEj" secondAttribute="centerX" id="52c-8c-xql"/>
+                            <constraint firstItem="ACp-Cn-jLR" firstAttribute="centerX" secondItem="awQ-mq-zyb" secondAttribute="centerX" id="Fuj-Ir-oqT"/>
+                            <constraint firstItem="ACp-Cn-jLR" firstAttribute="top" secondItem="awQ-mq-zyb" secondAttribute="top" multiplier="4:3" constant="10" id="HRC-MH-TUo"/>
+                            <constraint firstItem="ms3-hA-lLM" firstAttribute="top" secondItem="awQ-mq-zyb" secondAttribute="top" multiplier="2" constant="37" id="MXb-I8-VKE"/>
+                            <constraint firstItem="3CM-1A-jmQ" firstAttribute="centerY" secondItem="R9k-L9-JEj" secondAttribute="centerY" constant="50" id="aUA-hB-LFW"/>
+                            <constraint firstItem="vjL-WA-l7R" firstAttribute="top" secondItem="awQ-mq-zyb" secondAttribute="top" multiplier="2" constant="38" id="dOY-7E-f3Y"/>
+                            <constraint firstItem="ms3-hA-lLM" firstAttribute="centerX" secondItem="R9k-L9-JEj" secondAttribute="centerX" constant="43" id="t3K-wF-cqj"/>
+                            <constraint firstItem="vjL-WA-l7R" firstAttribute="centerX" secondItem="R9k-L9-JEj" secondAttribute="centerX" constant="-120" id="yDs-hs-tLh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="awQ-mq-zyb"/>
                     </view>
+                    <connections>
+                        <outlet property="answerLabel" destination="ms3-hA-lLM" id="irU-RY-Bvi"/>
+                        <outlet property="formulaLabel" destination="ACp-Cn-jLR" id="MDW-2o-D6g"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ejV-Ot-ijD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="325.60000000000002" y="168.6656671664168"/>
+            <point key="canvasLocation" x="320.625" y="165"/>
         </scene>
     </scenes>
 </document>

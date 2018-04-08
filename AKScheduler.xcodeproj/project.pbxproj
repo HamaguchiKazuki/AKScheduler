@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		19D6479D2737384DD1F1D4FB /* Pods_AKSchedulerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C7FFFEA4790CBFBA237B591 /* Pods_AKSchedulerTests.framework */; };
+		55036EB62078CDDC002FD3DD /* DesignController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55036EB52078CDDC002FD3DD /* DesignController.swift */; };
 		5551524020724540002708F3 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5551523F20724540002708F3 /* CalculatorViewController.swift */; };
 		555152422072455C002708F3 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555152412072455C002708F3 /* SettingViewController.swift */; };
 		5551524420724578002708F3 /* SchedulerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5551524320724578002708F3 /* SchedulerViewController.swift */; };
@@ -51,6 +52,7 @@
 		0DA99D8FBC5C12CF8E828995 /* Pods_AKScheduler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AKScheduler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		33DAA99CDDDA3A7C73B1F494 /* Pods-AKSchedulerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AKSchedulerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AKSchedulerTests/Pods-AKSchedulerTests.release.xcconfig"; sourceTree = "<group>"; };
 		5439C4731547A3CCCB02B5D3 /* Pods-AKScheduler.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AKScheduler.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AKScheduler/Pods-AKScheduler.debug.xcconfig"; sourceTree = "<group>"; };
+		55036EB52078CDDC002FD3DD /* DesignController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignController.swift; sourceTree = "<group>"; };
 		5551523F20724540002708F3 /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
 		555152412072455C002708F3 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		5551524320724578002708F3 /* SchedulerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulerViewController.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				55A145D4206CC59900B141E4 /* AppDelegate.swift */,
 				55A145D6206CC59900B141E4 /* MainViewController.swift */,
 				55A43B5C2074C4AA004136F4 /* PageViewController.swift */,
+				55036EB52078CDDC002FD3DD /* DesignController.swift */,
 				55A145D8206CC59900B141E4 /* Main.storyboard */,
 				55A145DB206CC59900B141E4 /* Assets.xcassets */,
 				55A145DD206CC59900B141E4 /* LaunchScreen.storyboard */,
@@ -441,11 +444,13 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-AKScheduler/Pods-AKScheduler-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AMNowClockView/AMNowClockView.framework",
+				"${BUILT_PRODUCTS_DIR}/Expression/Expression.framework",
 				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AMNowClockView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Expression.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -530,6 +535,7 @@
 				55A43B5D2074C4AA004136F4 /* PageViewController.swift in Sources */,
 				5551524420724578002708F3 /* SchedulerViewController.swift in Sources */,
 				555152422072455C002708F3 /* SettingViewController.swift in Sources */,
+				55036EB62078CDDC002FD3DD /* DesignController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -707,7 +713,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = IDF.AKScheduler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -723,7 +729,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = IDF.AKScheduler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

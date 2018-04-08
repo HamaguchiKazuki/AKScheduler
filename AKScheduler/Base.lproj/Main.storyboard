@@ -49,6 +49,24 @@
                                     <constraint firstAttribute="width" constant="320" id="awq-ex-unW"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4p9-lc-04m" customClass="BorderedLabel" customModule="AKScheduler" customModuleProvider="target">
+                                <rect key="frame" x="166" y="505" width="111" height="114"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.38858150460000002" green="1" blue="0.43902630079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="60"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="45"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -70,7 +88,7 @@
                 <swipeGestureRecognizer direction="right" id="4QE-q7-hGI" userLabel="RightSwiped"/>
                 <swipeGestureRecognizer direction="down" id="IdA-Tg-cMi" userLabel="DownSwiped"/>
             </objects>
-            <point key="canvasLocation" x="382.8125" y="91.9921875"/>
+            <point key="canvasLocation" x="381.60000000000002" y="91.304347826086968"/>
         </scene>
         <!--Setting-->
         <scene sceneID="05A-8n-3ng">
