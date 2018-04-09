@@ -10,7 +10,16 @@ import UIKit
 import JBDatePicker
 
 class SchedulerViewController: UIViewController, JBDatePickerViewDelegate {
+    
+    //カレンダーを作成するためのView
     @IBOutlet weak var datePicker: JBDatePickerView!
+    
+    lazy var dateFormatter: DateFormatter = {
+        var formatter = DateFormatter()
+        formatter.timeStyle = .none
+        formatter.dateStyle = .medium
+        return formatter
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,7 +27,7 @@ class SchedulerViewController: UIViewController, JBDatePickerViewDelegate {
     }
     
     func didSelectDay(_ dayView: JBDatePickerDayView) {
-        print("date selected: \(dayView.date!)")
+        print("date selected: \(dateFormatter.string(from: dayView.date!))")
     }
 
     override func didReceiveMemoryWarning() {

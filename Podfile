@@ -12,6 +12,7 @@ target 'AKScheduler' do
   pod 'AMNowClockView'
   pod 'Expression'
   pod 'JBDatePicker'
+  pod 'RealmSwift'
 
   target 'AKSchedulerTests' do
     inherit! :search_paths
