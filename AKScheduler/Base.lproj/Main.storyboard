@@ -34,46 +34,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="main" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JH3-wW-QP1">
-                                <rect key="frame" x="279" y="48" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cti-zG-hGo" customClass="AnalogClockView" customModule="AKScheduler" customModuleProvider="target">
-                                <rect key="frame" x="27" y="143" width="320" height="320"/>
+                                <rect key="frame" x="27" y="123.5" width="320" height="320"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="320" id="7QU-GJ-A3l"/>
-                                    <constraint firstAttribute="width" constant="320" id="awq-ex-unW"/>
+                                    <constraint firstAttribute="width" constant="320" id="UFx-tH-tJD"/>
+                                    <constraint firstAttribute="height" constant="320" id="wGP-kr-jOn"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4p9-lc-04m" customClass="BorderedLabel" customModule="AKScheduler" customModuleProvider="target">
-                                <rect key="frame" x="166" y="505" width="111" height="114"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="0.38858150460000002" green="1" blue="0.43902630079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="60"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="45"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Cti-zG-hGo" secondAttribute="bottom" constant="204" id="bZw-bZ-E3M"/>
-                            <constraint firstItem="Cti-zG-hGo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="27" id="jEr-UI-B5G"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Cti-zG-hGo" secondAttribute="trailing" constant="28" id="oTj-AI-YXL"/>
-                            <constraint firstItem="Cti-zG-hGo" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="143" id="uyP-6P-5G7"/>
+                            <constraint firstItem="Cti-zG-hGo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8be-dl-pBk"/>
+                            <constraint firstItem="Cti-zG-hGo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-50" id="mrv-5U-TNK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
