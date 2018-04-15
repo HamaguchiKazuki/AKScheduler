@@ -1,9 +1,10 @@
 PODS:
   - AMNowClockView (1.0)
+  - CalculateCalendarLogic (0.1.6)
   - Expression (0.12.9)
   - Fabric (1.7.6)
+  - FSCalendar (2.7.9)
   - GoogleAnalytics (3.17.0)
-  - JBDatePicker (1.2.5)
   - R.swift (4.0.0):
     - R.swift.Library (~> 4.0.0)
   - R.swift.Library (4.0.0)
@@ -15,24 +16,26 @@ PODS:
 
 DEPENDENCIES:
   - AMNowClockView
+  - CalculateCalendarLogic
   - Expression
   - Fabric
+  - FSCalendar
   - GoogleAnalytics
-  - JBDatePicker
   - R.swift
   - RealmSwift
 
 SPEC CHECKSUMS:
   AMNowClockView: f70c4c58a4addc743a566bc7028a5e58e728e4b9
+  CalculateCalendarLogic: 81b16c24e2b7273fffb03fc29d0c8d1800fd3c9e
   Expression: 009720cde3259d5e39dc18f1d32504fa136b4a09
   Fabric: f8d42c893bb187326a7968b62abe55c36a987a46
+  FSCalendar: a04b09f16f811bc92e82f3cf852a15225233b9d5
   GoogleAnalytics: f42cc53a87a51fe94334821868d9c8481ff47a7b
-  JBDatePicker: 0e791c8a79c49b0d37decea28ba147515bf5cfca
   R.swift: d6a5ec2f55a8441dc0ed9f1f8b37d7d11ae85c66
   R.swift.Library: c3af34921024333546e23b70e70d0b4e0cffca75
   Realm: d927fbf66df5532cfafc08afb5f7e53ded37b894
   RealmSwift: 4e903a494e05d866581d69ad6f7e7b879d446baf
 
-PODFILE CHECKSUM: 5cc8952f682cf4b6ab4f174e68850648b0cee2c5
+PODFILE CHECKSUM: 88c267f331aeaae76d588cd7fd5dd20ef272c3ee
 
 COCOAPODS: 1.4.0

@@ -21,15 +21,12 @@
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <userDefinedRuntimeAttributes>
                 <userDefinedRuntimeAttribute type="boolean" keyPath="isShowSelectedTime" value="YES"/>
-                <userDefinedRuntimeAttribute type="image" keyPath="clockImage" value="スクリーンショット 2018-04-06 16.08.57-1"/>
-                <userDefinedRuntimeAttribute type="color" keyPath="clockColor">
-                    <color key="value" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
-                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="image" keyPath="clockImage" value="Mosaic-tile02"/>
             </userDefinedRuntimeAttributes>
             <point key="canvasLocation" x="65" y="27"/>
         </view>
     </objects>
     <resources>
-        <image name="スクリーンショット 2018-04-06 16.08.57-1" width="667" height="667"/>
+        <image name="Mosaic-tile02" width="2560" height="1600"/>
     </resources>
 </document>
