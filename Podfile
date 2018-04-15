@@ -11,8 +11,9 @@ target 'AKScheduler' do
   pod 'GoogleAnalytics'
   pod 'AMNowClockView'
   pod 'Expression'
-  pod 'JBDatePicker'
   pod 'RealmSwift'
+  pod 'FSCalendar'
+  pod 'CalculateCalendarLogic' 
 
   target 'AKSchedulerTests' do
     inherit! :search_paths
